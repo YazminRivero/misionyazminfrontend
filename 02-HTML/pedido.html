@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1>Envianos tu pedido</h1>
-    <p>Llena el siguiente formulario</p>
-
+    <h3>¿Quién pide?</h3>
     <form action="pedido.js">
         <label for="Nombre">Nombre Completo</label><br>
         <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
@@ -18,20 +17,53 @@
         <input type="tel" id="Telefono" name="Telefono" placeholder="Telefono">
         <br> <br>
         <label for="Mail">Correo electronico</label><br>
-        <input type="email" id="Mail" name="Mail" placeholder="tu correo">
+        <input type="email" id="Mail" name="Mail" placeholder="Tu correo">
         <br> <br>
-        <label for="Descripcion">Descripcion general</label><br>
-        <input type="text" id="Descripcion" name="Descripcion">
+        <h3>Tipo de Pastel</h3>
+        <input type="radio" id="PastelOso" name="PastelOso" value="PastelOSo"> PastelOso <br>
     
+        <p>Elige tu PastelOso</p>
+        <select name="PastelOsos" id="PastelOsos">
+            <option value="Pandalux">Pandalux</option>
+            <option value="Grizzlove">Grizzlove</option>
+            <option value="Polarcito">Polarcito</option>
+        </select> <br> <br>
+        <p>Elige tu Adorno</p>
+        <select name="adorno" id="adorno">
+            <option value="Winnie Poo">Winnie Poo</option>
+            <option value="Escandalosos">Escandalosos</option>
+            <option value="Baloo">Baloo</option>
+            <option value="Poo">Poo</option>
+            <option value="Yogi">Yogi</option>
+        </select> <br> <br>
+        <input type="radio" name="Personalizado" value="2"> Personalizado<br>
+        <p>Selecciona el tipo de pan</p>
+        <input type="checkbox" name="Chocolate" value="Chocolate"> Chocolate
+        <input type="checkbox" name="vainilla" value="vainilla"> vainilla
+        <input type="checkbox" name="tres-leches" value="tres-leches"> Tres Leches <br>
+        <p>Selecciona el relleno <br> Recuerda que puedes elegir mas de uno</p>
+        <input type="checkbox" name="Fresas" value="Fresas"> Fresas
+        <input type="checkbox" name="Durazno" value="Durazno"> Durazno
+        <input type="checkbox" name="Frutos-rojos" value="Frutos-rojos"> Frutos Rojos <br>
+        <br> <br>
+        <label for="Otros detalles">Otros detalles</label><br>
+        <input type="text" id="Otros detalles" name="Otros detalles">
+
         <br> <br>
         <input type="reset">
         <input type="submit">
         <br> <br>
     </form> 
 
-        <a href="./pasteleria.html">
-            <button>Regresar al Menu</button>
-        </a>
+
+        
+    
+
+    <a href="./pasteleria.html">
+        <button>Regresar al Menu</button>
+    </a>
+
+
 
 </body>
 
